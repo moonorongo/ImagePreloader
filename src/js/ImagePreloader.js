@@ -10,6 +10,41 @@
     name: la imagen destino
 */
 
+
+(function( window, undefined ) {
+ 
+    // privados por aqui.
+    
+    var private = {
+        toType : function(obj) {
+            return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+        }
+    }
+
+
+    var ImagePreloader = (function(){
+
+    var core = {
+
+        trim : function( lalal ){
+            
+            return 'Object must be a String!';
+        }
+
+    };
+
+    return core;
+
+    })();
+
+    window.ImagePreloader = ImagePreloader;
+ 
+})(window);
+
+
+
+
+/*
 var ImagePreloader = function(images) {
     
     this.completeTask = null;
@@ -64,3 +99,4 @@ ImagePreloader.prototype.checkCompleteTask = function() {
             this.completeTask = setTimeout(function(){_this.checkCompleteTask();},100);
         }
     };
+*/
